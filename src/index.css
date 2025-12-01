@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+.font-handwriting {
+  font-family: "Dancing Script", cursive;
+}
+
+@import "tailwindcss";
+@theme {
+  --font-display: "Urbanist", sans-serif;
+}
+@layer {
+  html {
+    font-family: var(--font-display);
+  }
+  body {
+    background-color: #000000;
+    overflow-x: hidden;
+  }
+}
+.font-handwriting {
+  font-family: "Dancing Script", cursive;
+}
+.calendly-popup-content {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
