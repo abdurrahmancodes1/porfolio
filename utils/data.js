@@ -18,13 +18,14 @@ import {
   Users,
   ToolCase,
 } from "lucide-react";
-import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
+import { FiGithub, FiInstagram, FiLinkedin, FiTwitter } from "react-icons/fi";
 // Public assets are served from `/assets/...` by Vite (placed in `public/assets`)
 const PROJECT_IMAGE_1 = "/assets/portfolio.png";
 const PROJECT_IMAGE_2 = "/assets/jobportal.png";
 const PROJECT_IMAGE_3 = "/assets/interviewPrep.png";
 const PROJECT_IMAGE_4 = "/assets/resumebuilder.png";
-const PROFILE_PIC = "/assets/profileImage.png";
+const ROFILE_PIC =
+  "https://ik.imagekit.io/arcodes/PORTFOLIO/profileImage.png?updatedAt=1764524117367";
 
 // SKILLS CATEGORY
 export const SKILLS_CATEGORY = [
@@ -100,7 +101,8 @@ export const PROJECTS = [
     title: "JobHunt Portal",
     description:
       "A full-stack MERN job portal with user, company, and admin dashboards. Features authentication, profile management, job applications, admin controls, and state management with Redux Toolkit.",
-    image: PROJECT_IMAGE_2, // replace with your actual image import
+    image:
+      "https://ik.imagekit.io/arcodes/PORTFOLIO/jobportal.png?updatedAt=1764524116964", // replace with your actual image import
     tags: [
       "React",
       "Tailwind CSS",
@@ -121,7 +123,8 @@ export const PROJECTS = [
     title: "Personal Portfolio",
     description:
       "A modern responsive portfolio website built with React, Tailwind, and Framer Motion featuring dark/light mode, skill showcase, animated sections, contact form, and scheduling call feature.",
-    image: PROJECT_IMAGE_1,
+    image:
+      "https://ik.imagekit.io/arcodes/PORTFOLIO/portfolio.png?updatedAt=1764524117186",
     tags: ["React", "Tailwind CSS", "Framer Motion", "EmailJS"],
     // liveUrl: "#", // your portfolio live link
     githubUrl: "#", // your portfolio repo link
@@ -133,7 +136,8 @@ export const PROJECTS = [
     title: "Interview Preparation AI App",
     description:
       "AI-powered full-stack web app to help users prepare for interviews. Includes authentication, AI-generated questions, session tracking, and MongoDB-backed storage for personalized learning.",
-    image: PROJECT_IMAGE_3,
+    image:
+      "https://ik.imagekit.io/arcodes/PORTFOLIO/interviewPrep.png?updatedAt=1764524117152",
     tags: [
       "React",
       "Tailwind CSS",
@@ -153,7 +157,8 @@ export const PROJECTS = [
     title: "AI Resume Builder",
     description:
       "An online resume builder app where users can create, manage, and share professional resumes. Includes live preview, AI-powered resume optimization using Google Gemini, image background removal, and multiple customizable templates. Uses ImageKit for image storage and a full MERN stack for backend integration.",
-    image: PROJECT_IMAGE_4, // replace with your actual image import
+    image:
+      "https://ik.imagekit.io/arcodes/PORTFOLIO/resumebuilder.png?updatedAt=1764524117173", // replace with your actual image import
     tags: [
       "React",
       "Tailwind CSS",
@@ -235,14 +240,14 @@ export const SOCIAL_LINKS = [
   {
     name: "LinkedIn",
     icon: FiLinkedin,
-    url: "#",
+    url: "https://www.linkedin.com/in/abdur1rahman/",
     color: "hover:text-blue-400",
     bgColor: "hover:bg-blue-800",
   },
   {
-    name: "Twitter",
-    icon: FiTwitter,
-    url: "#",
+    name: "Instagram",
+    icon: FiInstagram,
+    url: "https://www.instagram.com/ar_codes01/",
     color: "hover:text-sky-400",
     bgColor: "hover:bg-sky-800",
   },
@@ -252,13 +257,13 @@ export const SOCIAL_LINKS = [
 export const CONTACT_INFO = [
   { icon: MapPin, label: "Location", value: "Muzaffarpur, Bihar" },
   { icon: Mail, label: "Email", value: "abdurrahman.codes@gmail.com" },
-  { icon: Phone, label: "Phone", value: "+91 61616131" },
+  { icon: Phone, label: "Phone", value: "+919525178092" },
 ];
 
 // EXPERIENCE
 export const EXPERIENCE_STEPS = [
   {
-    year: "2018 - Present",
+    year: "2019 - Present",
     title: "Private Tutor (Part-time)",
     school: "Muzaffarpur",
     description:

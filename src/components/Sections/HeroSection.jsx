@@ -4,7 +4,7 @@ import { ArrowDown, Mail } from "lucide-react";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { useTheme } from "../context/ThemeContext";
 // Use public asset path (files in `public/assets` are served from `/assets/...`)
-const PROFILE_PIC = "/assets/profileImage.png";
+const PROFILE_PIC = "https://ik.imagekit.io/arcodes/PORTFOLIO/profileImage.png";
 
 const HeroSection = () => {
   const { isDarkMode } = useTheme();
@@ -91,10 +91,7 @@ const HeroSection = () => {
                     } shadow-2xl`}
                   >
                     <img
-                      src={
-                        PROFILE_PIC ||
-                        "https://ik.imagekit.io/arcodes/PORTFOLIO/profileImage.png"
-                      }
+                      src={PROFILE_PIC}
                       alt="Profile"
                       className="w-full h-full object-cover"
                     />
